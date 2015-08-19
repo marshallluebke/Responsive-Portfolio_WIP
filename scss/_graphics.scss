@@ -1,0 +1,113 @@
+.hero{
+	h1{
+		color:#fff;
+	}
+	p{
+		color:#fff;
+	}
+}
+
+
+#hero1{
+ background:url(../images/HoustonSkyline.jpg);
+  background-size:cover;
+  background-position:center center;
+  background-attachment:fixed;
+}
+
+#hero2{
+	@extend #hero1;
+	background: url(http://7-themes.com/data_images/out/10/6801689-lovely-nature-wallpaper.jpg);
+	background-attachment:fixed;
+}
+
+#hero3{
+	@extend #hero1;
+	background: url('../images/sunset.jpg');
+	background-attachment:fixed;
+}
+
+#hero4{
+	@extend #hero1;
+	background: url('http://7-themes.com/data_images/out/58/6969942-macro-nature.jpg');
+	background-attachment:fixed;
+}
+
+.hero{
+  text-align:center; 
+  width: 100%;
+  position:relative;
+}
+
+.inner{
+	min-height:400px;
+	position:relative;
+
+}
+
+@mixin min-height($min-height){
+	min-height: $min-height;
+}
+.height-adjust{
+	@extend .inner;
+	@include min-height(295px);
+}
+
+.height-adjust-2{
+	@extend .height-adjust;
+	@include min-height(200px);
+	margin-bottom:50px;
+}
+
+.height-adjust-3{
+	@extend .height-adjust;
+	@include min-height(295px);
+	margin-bottom:50px;
+}
+
+
+
+.hero .inner-top{
+  background: rgba(0,0,0,0.5) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAD0lEQVQIW2NkQABjRmQOAAM+AGkQsDBSAAAAAElFTkSuQmCC) repeat;}
+
+.profile{
+	position:absolute; 
+	top:50%; 
+	height:10em; 
+	width:100%;
+	margin-top:-12em!important;
+	img{
+		border:1px solid rgba(0,0,0,.3);
+	}
+}
+
+.header{
+	border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+#left-info{
+	padding-top:7px!important;
+	padding-right:0px!important;
+	padding-left:0px!important;
+
+}
+
+#right-info{
+	text-align:left;
+	padding:0px;
+	h3{
+		margin-top:0px;
+
+	}
+}
+
+
+.copy{
+	@extend .profile;
+	margin-top:-5em!important;
+}
+
+
+
+
+
