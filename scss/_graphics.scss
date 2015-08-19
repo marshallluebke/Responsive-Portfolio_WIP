@@ -1,3 +1,5 @@
+//this is where most of the css is generated for the website
+
 .hero{
 	h1{
 		color:#fff;
@@ -7,7 +9,7 @@
 	}
 }
 
-
+//settings for the background images
 #hero1{
  background:url(../images/HoustonSkyline.jpg);
   background-size:cover;
@@ -39,12 +41,16 @@
   position:relative;
 }
 
+//***********************************************************************************************//
+
 .inner{
 	min-height:400px;
 	position:relative;
 
 }
 
+// adjustments for the margin and height of the different content portions.
+// issues with text overlapping due to relative positioning of .inner (FIND TIME TO LEARN A FIX FOR THIS!)
 @mixin min-height($min-height){
 	min-height: $min-height;
 }
@@ -65,10 +71,13 @@
 	margin-bottom:50px;
 }
 
+//***********************************************************************************************//
 
-
+// overlay for the first background image
 .hero .inner-top{
   background: rgba(0,0,0,0.5) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAD0lEQVQIW2NkQABjRmQOAAM+AGkQsDBSAAAAAElFTkSuQmCC) repeat;}
+
+//***********************************************************************************************//
 
 .profile{
 	position:absolute; 
