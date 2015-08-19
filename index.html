@@ -4,12 +4,16 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Marshall Luebke</title>
+	<!-- main stylesheet created by the scss -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!-- Bootstrap css and scripts -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </head>
+
 <body>
+	<!-- top navbar -->
 	<nav class="navbar navbar-inverse ">
 		<div class="container-fluid">
 			<!-- Logo -->
@@ -32,6 +36,8 @@
 			</div>
 		</div>
 	</nav>
+
+	<!-- first background image & profile picure -->
 	<section id="hero1" class="hero">
 		<div class="container-fluid inner inner-top">
 			<div class="row profile">
@@ -41,13 +47,19 @@
 			</div>
 		</div>
 	</section>
+
+	<!-- first content section -->
 	<section class="content">
 		<div class="container-fluid inner height-adjust">
+
+			<!-- section header -->
 			<div class="row text-left">
 				<div class="col-md-6 header">
 					<h1 id="education-link">Education</h1>
 				</div>
 			</div>
+
+		<!-- left column -->
 		<div class="row copy">
 				<div class="col-lg-6 col-xs-12">
 					<div class="col-lg-2 col-xs-12" id="left-info">
@@ -58,8 +70,8 @@
 						<h3>Computer University</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas necessitatibus explicabo debitis quo sequi sapiente, nihil, deserunt eius. Dolorem, vero dolore reprehenderit non explicabo optio corporis doloremque ipsa vel odio veritatis tempore quia, officiis voluptatum impedit molestiae iste. Facere temporibus quis dolor accusantium alias! Beatae minus, omnis dolorem dolor enim.</p>
 					</div>
-
 				</div>
+				<!-- right column -->
 				<div class="col-lg-6  text-center rankings">
 					<div class="col-lg-4 col-md-12 text-center">
 						<p>&#9733;&#9733;&#9733;&#9733;&#9733;</p>
@@ -76,6 +88,8 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- left column 2 -->
 		<div class="container-fluid inner height-adjust-2">
 			<div class="row copy">
 				<div class="col-lg-6 col-xs-12">
@@ -88,6 +102,8 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas necessitatibus explicabo debitis quo sequi sapiente, nihil, deserunt eius. Dolorem, vero dolore reprehenderit non explicabo optio corporis doloremque ipsa vel odio veritatis tempore quia, officiis voluptatum impedit molestiae iste. Facere temporibus quis dolor accusantium alias! Beatae minus, omnis dolorem dolor enim.</p>
 					</div>					
 				</div>
+
+				<!-- right column 2 -->
 				<div class="col-lg-6 text-center rankings">
 					<div class="col-lg-4 text-center">
 						<p>&#9733;&#9733;&#9733;&#9733;&#9733;</p>
@@ -105,16 +121,23 @@
 			</div>
 		</div>
 	</section>
+
+	<!-- second background image -->
 	<section id="hero2" class="hero">
   <div class="container-fluid inner"></div>
 </section>
+
+<!-- second content section -->
 <section class="content">
   <div class="container-fluid inner height-adjust">
+  <!-- section header -->
     <div class="row header">
 		<div class="col-lg-12 text-center">
 			<h1 id="experience-link">Experience</h1>
 		</div>
     </div>
+
+    	<!-- first column -->
 		<div class="row copy">
 				<div class="col-lg-12 col-xs-12">
 					<div class="col-lg-2 col-xs-12 text-center experience-yrs" id="left-info">
@@ -129,6 +152,8 @@
 				</div>
 		</div>
 	</div>
+
+		<!-- second column -->
 		<div class="container-fluid inner height-adjust-2">
 			<div class="row copy">	
 				<div class="col-lg-12 col-xs-12">
@@ -143,7 +168,9 @@
 				</div>
 			</div>
 		</div>
-<div class="container-fluid inner height-adjust-3">
+
+		<!-- third column -->
+		<div class="container-fluid inner height-adjust-3">
 			<div class="row copy">	
 				<div class="col-lg-12 col-xs-12">
 					<div class="col-lg-2 col-xs-12 text-center experience-yrs" id="left-info">
@@ -158,9 +185,13 @@
 			</div>
 		</div>		
 </section>
+
+<!-- Third background image -->
 <section id="hero3" class="hero">
   <div class="container-fluid inner"></div>
 </section>
+
+<!-- portfolio section & full 12 column spread --> 
 <div class="container-fluid inner height-adjust">
 			<div class="row text-left">
 				<div class="col-md-12 header">
@@ -173,9 +204,13 @@
 				</div>			
 		</div>
 </div>
+
+<!-- fourth background image -->
 <section id="hero4" class="hero">
   <div class="container-fluid inner"></div>
 </section>
+
+<!-- contact section. -->
 <div class="container-fluid inner height-adjust">
 			<div class="row text-center">
 				<div class="col-md-12 header">
@@ -192,6 +227,17 @@
 				</div>			
 		</div>
 </div>
+
+<!-- location to add a custom contact form -->
+<div class="container inner">
+	<div class="row text-center">
+		<div class="col-md-12">
+			Insert Custom Form Here
+		</div>
+	</div>
+</div>
+
+<!-- footer -->
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-lg-12 footer text-center">
@@ -203,6 +249,9 @@
 		</div>
 	</div>
 </div>
+
+
+<!-- this script adds the smooth scrolling functionality when clicking on any of the navbar links -->
 <script type="text/javascript">
 $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
@@ -219,5 +268,6 @@ $('a[href*=#]:not([href=#])').click(function() {
     }
 });
 </script>
+
 </body>
 </html>
